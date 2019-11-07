@@ -1,0 +1,47 @@
+.radio-container {
+    width: 25%;
+    height: 50%;
+}
+
+header {
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(249, 171, 82);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 0;
+    border: none;
+    background: none;
+    margin: 25px;
+}
+
+.btn img {
+    width: 30px;
+}
+
+main {
+    overflow: hidden;
+    background-color: rgb(47, 46, 59);
+}
+
+.stationsList {
+    list-style: none;
+    background-color: rgb(47, 46, 59);
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    background-color: rgb(36, 36, 46);
+    color: rgb(162, 169, 196);
+    padding: 10px 20px;
+    border-top: 1px solid rgb(74, 72, 94);
+    border-radius: 0px 0px 20px 20px;
+}
