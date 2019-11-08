@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import "./radio-container.css";
-import RadioStation from "./radio-station/radio-station";
-import backArrow from "../../assets/back-arrow.png";
-import switchBtn from "../../assets/switch.png";
+import Footer from "../Footer/footer";
+import Header from "../Header/header";
+import StationItem from "../StationItem/station-item";
 
 class RadioContainer extends Component {
   state = {
     stations: [
-      { name: "Radio1", id: "1" },
-      { name: "Radio2", id: "2" },
-      { name: "Radio3", id: "3" },
-      { name: "Radio4", id: "4" }
+      { name: "Putin FM", id: "66.6" },
+      { name: "Dribble FM", id: "101.2" },
+      { name: "Dodge FM", id: "99.4" },
+      { name: "Ballads FM", id: "87.1" },
+      { name: "Maximum FM", id: "142.2" }
     ],
     currentStation: { name: "", id: "" }
   };
@@ -19,32 +20,20 @@ class RadioContainer extends Component {
     this.setState({ currentStation });
   }
 
-  clearSelectedStation() {
+  clearSelectedStation = () => {
     const currentStation = { name: "", id: "" };
     this.setState({ currentStation });
-  }
+  };
 
   render() {
     return (
       <div className="radio-container">
-        <header>
-          <button className="btn">
-            <img src={backArrow} alt="Back" />
-          </button>
-          <h1>STATIONS</h1>
-          <button className="btn">
-            <img
-              src={switchBtn}
-              alt="Switch"
-              onClick={() => this.clearSelectedStation()}
-            />
-          </button>
-        </header>
+        <Header clearStation={this.clearSelectedStation} />
         <main>
           <ul className="stationsList">
             {this.state.stations.map(station => (
               <li key={station.id}>
-                <RadioStation
+                <StationItem
                   station={station}
                   activeStation={this.state.currentStation.id}
                   onRadioSelection={currentStation =>
@@ -55,10 +44,7 @@ class RadioContainer extends Component {
             ))}
           </ul>
         </main>
-        <footer>
-            <h5>CURRENTLY PLAYING</h5>
-          <h2>{this.state.currentStation.name}</h2>
-        </footer>
+        <Footer station={this.state.currentStation.name} />
       </div>
     );
   }
