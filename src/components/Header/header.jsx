@@ -6,10 +6,6 @@ import { faPowerOff, faChevronLeft } from "@fortawesome/fontawesome-free-solid";
 class Header extends Component {
   state = {};
 
-  clearSelected() {
-    this.props.clearStation();
-  }
-
   render() {
     return (
       <header>
@@ -18,7 +14,7 @@ class Header extends Component {
         </button>
         <h3>Stations</h3>
         <button className="btn">
-          <FontAwesomeIcon onClick={() => this.clearSelected()} className="icon" icon={faPowerOff} />
+          <FontAwesomeIcon className="icon" icon={faPowerOff} />
         </button>
       </header>
     );

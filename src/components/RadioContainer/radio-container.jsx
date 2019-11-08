@@ -20,15 +20,10 @@ class RadioContainer extends Component {
     this.setState({ currentStation });
   }
 
-  clearSelectedStation = () => {
-    const currentStation = { name: "", id: "" };
-    this.setState({ currentStation });
-  };
-
   render() {
     return (
       <div className="radio-container">
-        <Header clearStation={this.clearSelectedStation} />
+        <Header />
         <main>
           <ul className="stationsList">
             {this.state.stations.map(station => (
