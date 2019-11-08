@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/React-Radio/static/css/main.63610452.chunk.css",
+    "main.js": "/React-Radio/static/js/main.a805894d.chunk.js",
+    "main.js.map": "/React-Radio/static/js/main.a805894d.chunk.js.map",
+    "runtime-main.js": "/React-Radio/static/js/runtime-main.633c15d9.js",
+    "runtime-main.js.map": "/React-Radio/static/js/runtime-main.633c15d9.js.map",
+    "static/js/2.9316ac1f.chunk.js": "/React-Radio/static/js/2.9316ac1f.chunk.js",
+    "static/js/2.9316ac1f.chunk.js.map": "/React-Radio/static/js/2.9316ac1f.chunk.js.map",
+    "index.html": "/React-Radio/index.html",
+    "precache-manifest.781a9837a8a407821247b3adb2ccc0a7.js": "/React-Radio/precache-manifest.781a9837a8a407821247b3adb2ccc0a7.js",
+    "service-worker.js": "/React-Radio/service-worker.js",
+    "static/css/main.63610452.chunk.css.map": "/React-Radio/static/css/main.63610452.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.633c15d9.js",
+    "static/js/2.9316ac1f.chunk.js",
+    "static/css/main.63610452.chunk.css",
+    "static/js/main.a805894d.chunk.js"
+  ]
+}
