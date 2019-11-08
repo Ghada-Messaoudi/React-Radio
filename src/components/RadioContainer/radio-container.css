@@ -1,11 +1,26 @@
 .radio-container {
-    width: 25%;
-    /* height: 50%; */
+    width: 350px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    .radio-container {
+        width: 25%;
+        overflow: hidden;
+    }
 }
 
 main {
+    width: 300;
+    height: 350px;
     background-color: rgb(47, 46, 59);
-    overflow: hidden;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
 }
 
 .stationsList {

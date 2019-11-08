@@ -16,7 +16,7 @@ class StationItem extends Component {
         {this.props.activeStation === station.id && <StationControls />}
         <div className="name">
           <div>{station.name}</div>
-          <div>{station.id}</div>
+          <div><strong>{station.id}</strong></div>
         </div>
       </div>
     );
